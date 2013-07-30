@@ -1,0 +1,18 @@
+domain: extrastats
+
+cat:
+bowhitdist (meters) - highest distance of a player hitting a mob with a bow
+bowkilldist (meters) - highest distance of a player killing a mob with a bow
+
+sheepsheared (count) - number of sheep sheared of a given color (colors is the DyeColor enum in lowercase and "_" replaced with ""
+
+totaltntkills (count) - amount of monsters of a given type killed with tnt, there is also a total value, this is a counter and gets increased all the time
+maxtntkills (count) - amount of monsters of a given type killed with a single tnt explosion, there is also a total value, this is a maximum value
+
+daylightkills stat(enderman) - amount of enderman killed in broad daylight
+
+currentkills: current kills for a given mobtype in the current life
+maxkills : maximum kills for a given monstertype achieved in a single life
+
+currentnodmgkills: current kills for a given mobtype that have been achieved wihout taking damage
+maxnodmgkills : maximum kills for a given monstertype achieved without taking damage
