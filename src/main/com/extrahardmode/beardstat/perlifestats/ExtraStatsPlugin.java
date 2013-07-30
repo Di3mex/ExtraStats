@@ -30,6 +30,7 @@ public class ExtraStatsPlugin extends JavaPlugin implements Listener
         new TntKillsListener(this);
         new EndermanDayListener(this);
         new PerLifeListener(this);
+        new RareDropListener(this);
     }
 
 

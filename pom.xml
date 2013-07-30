@@ -88,6 +88,12 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>com.extrahardmode</groupId>
+            <artifactId>ExtraHardMode</artifactId>
+            <version>3.4-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
             <version>${mc-version}-${bukkit-ver}</version>

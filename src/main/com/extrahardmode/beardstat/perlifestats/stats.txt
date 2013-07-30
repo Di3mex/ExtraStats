@@ -16,3 +16,5 @@ maxkills : maximum kills for a given monstertype achieved in a single life
 
 currentnodmgkills: current kills for a given mobtype that have been achieved wihout taking damage
 maxnodmgkills : maximum kills for a given monstertype achieved without taking damage
+
+raredrops: rare drops or unusual drops from monsters like potatoes/carrots or musicdiscs from creepers.

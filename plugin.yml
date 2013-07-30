@@ -7,3 +7,4 @@ dev-url: ${project.url}
 author: Diemex
 #ensure that we are loaded after BeardStat
 depend: [BeardStat]
+softdepend: [ExtraHardMode]
