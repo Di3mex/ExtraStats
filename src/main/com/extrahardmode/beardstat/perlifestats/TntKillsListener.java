@@ -80,13 +80,16 @@ public class TntKillsListener implements Listener
         {
             Map<String, Integer> kills = tntKills.remove(primed);
             //Stat for every entity
+            int total = 0;
             for (Map.Entry<String, Integer> entry : kills.entrySet())
             {
-                plugin.getStat(name, world, "tntkills", entry.getKey()).incrementStat(entry.getValue());
-                plugin.getServer().broadcastMessage(String.format("Kills %s %s", entry.getKey(), entry.getValue()));
+                plugin.getStat(name, world, "totaltntkills", entry.getKey()).incrementStat(entry.getValue());
+                plugin.updateIfGreater(name, world, "maxtntkills", entry.getKey(), entry.getValue());
+                total += entry.getValue();
             }
             //Total tnt kills
-            plugin.getStat(name, world, "tntkills", "total").incrementStat(kills.size());
+            plugin.getStat(name, world, "totaltntkills", "total").incrementStat(total);
+            plugin.updateIfGreater(name, world, "maxtntkills", "total", total);
         }
     }
 }
