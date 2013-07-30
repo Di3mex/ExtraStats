@@ -44,7 +44,10 @@ public class RareDropListener implements Listener
             {
                 if (!isNaturalDrop(event.getEntityType(), drop.getType()))
                 {
-                    plugin.getStat(player.getName(), player.getWorld().getName(), "raredrops", drop.getType().name().toLowerCase().replace("_", "")).incrementStat(drop.getAmount());
+                    String type = drop.getType().name().toLowerCase().replace("_", "");
+                    plugin.getStat(player.getName(), player.getWorld().getName(), "raredrops", type).incrementStat(drop.getAmount());
+                    if (drop.getType().isRecord())
+                        plugin.getStat(player.getName(), player.getWorld().getName(), "raredrops", "record").incrementStat(drop.getAmount());
                 }
             }
         }
