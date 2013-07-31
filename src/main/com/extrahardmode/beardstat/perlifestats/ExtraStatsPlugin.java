@@ -31,6 +31,7 @@ public class ExtraStatsPlugin extends JavaPlugin implements Listener
         new EndermanDayListener(this);
         new PerLifeListener(this);
         new RareDropListener(this);
+        new RecordPlayListener(this);
     }
 
 
