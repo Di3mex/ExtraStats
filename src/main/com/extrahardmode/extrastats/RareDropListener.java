@@ -1,4 +1,4 @@
-package com.extrahardmode.beardstat.perlifestats;
+package com.extrahardmode.extrastats;
 
 
 import org.bukkit.Material;
@@ -10,9 +10,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDeathEvent;
 import org.bukkit.inventory.ItemStack;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author Diemex

@@ -1,4 +1,4 @@
-package com.extrahardmode.beardstat.perlifestats;
+package com.extrahardmode.extrastats;
 
 
 import org.bukkit.entity.*;

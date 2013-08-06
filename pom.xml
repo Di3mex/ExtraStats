@@ -13,7 +13,7 @@
     <!-- Properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.mainclass>com.extrahardmode.beardstat.perlifestats.ExtraStatsPlugin</project.mainclass>
+        <project.mainclass>com.extrahardmode.extrastats.ExtraStatsPlugin</project.mainclass>
         <outputdir>${project.build.outputDirectory}</outputdir>
         <!--Use a profile to overwrite this-->
         <mc-version>1.6.2</mc-version>
