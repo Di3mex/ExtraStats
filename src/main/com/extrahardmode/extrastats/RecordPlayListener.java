@@ -30,7 +30,7 @@ public class RecordPlayListener implements Listener
     private void onRecordPlay(PlayerInteractEvent event)
     {
         //If the Item in hand will be inserted into a jukebox
-        if (event.getClickedBlock().getType() == Material.JUKEBOX && event.getItem().getType().isRecord())
+        if (event.hasBlock() && event.getClickedBlock().getType() == Material.JUKEBOX && event.getMaterial().isRecord())
         {
             Jukebox beatBox = (Jukebox) event.getClickedBlock().getState();
             //record will only play if there is no record playing atm, then the record will be ejected first
